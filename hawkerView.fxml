@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Hawkermanager.hawkerViewController">
+   <children>
+      <Label layoutX="271.0" layoutY="61.0" prefHeight="45.0" prefWidth="308.0" text="HAWKER MANAGER">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="200.0" layoutX="27.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@contacts.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="189.0" text="Hawker Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboHawkerName" editable="true" layoutX="59.0" layoutY="225.0" prefWidth="150.0" />
+      <Button layoutX="227.0" layoutY="225.0" mnemonicParsing="false" onAction="#doSearch" style="-fx-border-color: black;" text="Search" />
+      <Label layoutX="355.0" layoutY="189.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="351.0" layoutY="225.0" />
+      <Label layoutX="68.0" layoutY="269.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="59.0" layoutY="303.0" prefHeight="27.0" prefWidth="401.0" />
+      <Label layoutX="68.0" layoutY="343.0" text="Areas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboHawkerAreas" editable="true" layoutX="61.0" layoutY="377.0" onMouseClicked="#doPutSelAreas" prefWidth="150.0" />
+      <ImageView fx:id="imgHawkerAadhar" fitHeight="118.0" fitWidth="158.0" layoutX="442.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/DisplayHawker.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="424.0" layoutY="482.0" mnemonicParsing="false" onAction="#doUploadAadharpic" style="-fx-border-color: black;" text="Upload Aadhar Pic">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="68.0" layoutY="422.0" text="Allocated Areas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAllocatedAreas" layoutX="62.0" layoutY="464.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button layoutX="326.0" layoutY="545.0" mnemonicParsing="false" onAction="#doNew" style="-fx-border-color: black;" text="New">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="271.0" layoutY="545.0" mnemonicParsing="false" onAction="#doFire" style="-fx-border-color: black;" text="Fire">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="193.0" layoutY="545.0" mnemonicParsing="false" onAction="#doUpdate" style="-fx-border-color: black;" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="128.0" layoutY="545.0" mnemonicParsing="false" onAction="#doEnroll" style="-fx-border-color: black;" text="Enroll">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblPath" layoutX="61.0" layoutY="497.0" text="PicPath" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
