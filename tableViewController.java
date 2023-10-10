@@ -33,16 +33,16 @@ public class tableViewController
     @FXML
     void doShowAll(ActionEvent event) 
     {
-    	TableColumn<HawkerBean, String> name=new TableColumn<HawkerBean, String>("Hawker Name");//any thing
-    	name.setCellValueFactory(new PropertyValueFactory<>("hname")); //name of column 
+    	TableColumn<HawkerBean, String> name=new TableColumn<HawkerBean, String>("Hawker Name");
+    	name.setCellValueFactory(new PropertyValueFactory<>("hname")); 
     	//name.setMinWidth(150);
     	
-    	TableColumn<HawkerBean, String> mobile=new TableColumn<HawkerBean, String>("Hawker Mobile No");//any thing
+    	TableColumn<HawkerBean, String> mobile=new TableColumn<HawkerBean, String>("Hawker Mobile No");
     	mobile.setCellValueFactory(new PropertyValueFactory<>("mobile"));
     	mobile.setMinWidth(50);
     	
     	 TableColumn<HawkerBean, String> alloareas = new TableColumn<HawkerBean, String>("Allocated Areas");
-         alloareas.setCellValueFactory(new PropertyValueFactory<>("allo_areas")); // Use "allo_areas" instead of "alloareas"
+         alloareas.setCellValueFactory(new PropertyValueFactory<>("allo_areas"));
          alloareas.setMinWidth(50);
     	
     	TableColumn<HawkerBean, String> doj=new TableColumn<HawkerBean, String>("Date of joining");//any thing
