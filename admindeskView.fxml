@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admindesk.admindeskViewController">
+   <children>
+      <Label layoutX="224.0" layoutY="7.0" text="ADMIN DESK">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="156.0" layoutX="21.0" layoutY="127.0" onMouseClicked="#doopenhawkermanwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/HAWKER%20MANAGER%20PIC-1(MICR).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="142.0" layoutX="202.0" layoutY="119.0" onMouseClicked="#doopencustomermasterwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/CUSTOMER%20MANAGER%20PIC-1(MICR).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="148.0" layoutX="379.0" layoutY="104.0" onMouseClicked="#doopenbillgenwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/BILL%20GENERATOR%20PIC-1(MIC).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="142.0" layoutX="553.0" layoutY="113.0" onMouseClicked="#doopenbillcollwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/BILL%20STATUS%20PIC-1(MICR)%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-1.0" layoutY="306.0" prefHeight="0.0" prefWidth="900.0" />
+      <ImageView fitHeight="130.0" fitWidth="148.0" layoutX="37.0" layoutY="346.0" onMouseClicked="#doopenpapermasterwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/PAPER%20MASTER%20PIC-1(MICR).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="164.0" layoutX="189.0" layoutY="370.0" onMouseClicked="#doopendisplayhawkerwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/DISPLAY%20HAWKER%20PIC-1(MICR).jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="206.0" layoutY="494.0" mnemonicParsing="false" onAction="#doOpentableHawkers" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Display Hawkers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="125.0" fitWidth="148.0" layoutX="375.0" layoutY="366.0" onMouseClicked="#doopencustomergoogwithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/CUSTOMER%20GOOGLER%20PIC-1(MICR).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="104.0" layoutX="565.0" layoutY="359.0" onMouseClicked="#doopenbillstatuswithimg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/Billcollec-2.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="157.0" layoutY="583.0" mnemonicParsing="false" onAction="#doOpenMeetthedevelopers" prefHeight="70.0" prefWidth="396.0" style="-fx-border-color: black; -fx-border-width: 4;" text="MEET THE DEVELOPERS">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="494.0" mnemonicParsing="false" onAction="#doOpenPaperMaster" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Paper Master">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="492.0" mnemonicParsing="false" onAction="#doOpenCustomerGoog" prefHeight="38.0" prefWidth="156.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Customer Googler">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="553.0" layoutY="492.0" mnemonicParsing="false" onAction="#doOpenTableBillStatus" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Bill Board">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="242.0" mnemonicParsing="false" onAction="#doOpenHawkerMan" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Hawker Manager">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="202.0" layoutY="242.0" mnemonicParsing="false" onAction="#doOpenCustomerMas" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Customer Master">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="373.0" layoutY="242.0" mnemonicParsing="false" onAction="#doOpenBillGenerator" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Bill Generator">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="546.0" layoutY="242.0" mnemonicParsing="false" onAction="#doOpenBillCollector" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black; -fx-border-width: 4;" text="Bill Collector">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

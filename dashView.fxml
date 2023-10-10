@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashBoard.dashViewController">
+   <children>
+      <Label layoutX="121.0" layoutY="6.0" text="MEET OUR DEVELOPERS">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgDeveloped" fitHeight="162.0" fitWidth="126.0" layoutX="58.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/Saved%20Pictures/dog%20pic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="240.0" text="Developed BY:-">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgUnder" fitHeight="174.0" fitWidth="162.0" layoutX="354.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/NewspaperAgencyJavaProject/Rajesh%20sir.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="339.0" layoutY="240.0" text="Under The Guidance Of:-">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="277.0" text="Muskaan Chauhan">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="277.0" text="Rajesh.K.Bansal">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="312.0" text="Author of REAL JAVA">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="312.0" text="7888787126">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

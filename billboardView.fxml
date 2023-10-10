@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billBoard.billboardViewController">
+   <children>
+      <Label layoutX="177.0" text="BILL BOARD">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radPending" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" text="Pending">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="dopending" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radPaid" layoutX="127.0" layoutY="88.0" mnemonicParsing="false" text="Paid" toggleGroup="$dopending">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="208.0" layoutY="89.0" mnemonicParsing="false" onAction="#doSearchCus" prefHeight="28.0" prefWidth="57.0" style="-fx-border-color: black;" text="Search" />
+      <Label layoutX="293.0" layoutY="92.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="510.0" layoutY="91.0" mnemonicParsing="false" onAction="#doshowBillHistory" prefHeight="28.0" prefWidth="80.0" style="-fx-border-color: black;" text="Bill History" />
+      <TableView fx:id="tableBillBoard" layoutX="19.0" layoutY="137.0" prefHeight="200.0" prefWidth="583.0" />
+      <Button layoutX="148.0" layoutY="348.0" mnemonicParsing="false" onAction="#doExport" prefHeight="28.0" prefWidth="57.0" style="-fx-border-color: black;" text="Export" />
+      <Label layoutX="274.0" layoutY="350.0" text="Total Amount">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotAmount" layoutX="385.0" layoutY="349.0" />
+      <ComboBox fx:id="combomobbill" layoutX="356.0" layoutY="93.0" prefHeight="25.0" prefWidth="137.0" />
+   </children>
+</AnchorPane>

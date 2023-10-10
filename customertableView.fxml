@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerDashtv.customertableViewController">
+   <children>
+      <Label layoutX="125.0" text="CUSTOMER PANEL">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="85.0" text="Area">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboCusAreas" layoutX="97.0" layoutY="90.0" prefWidth="150.0" />
+      <Button layoutX="399.0" layoutY="128.0" mnemonicParsing="false" onAction="#doFetch" style="-fx-border-color: black;" text="Fetch" />
+      <Label layoutX="281.0" layoutY="86.0" text="Paper">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboCusPapers" layoutX="350.0" layoutY="90.0" prefWidth="150.0" />
+      <Button layoutX="138.0" layoutY="128.0" mnemonicParsing="false" onAction="#doFilter" style="-fx-border-color: black;" text="Filter" />
+      <TableView fx:id="tableCusName" layoutX="10.0" layoutY="163.0" prefHeight="228.0" prefWidth="576.0" />
+      <Button layoutX="223.0" layoutY="399.0" mnemonicParsing="false" onAction="#doExportAndPrint" style="-fx-border-color: black;" text="Export To Excel &amp; Print" />
+   </children>
+</AnchorPane>
